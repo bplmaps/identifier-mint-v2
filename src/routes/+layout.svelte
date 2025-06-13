@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../app.css';
 	let { children } = $props();
-	let count = $state(0)
 </script>
 
 <nav class="bg-gray-600 font-sans">
