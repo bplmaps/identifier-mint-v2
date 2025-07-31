@@ -1,6 +1,6 @@
 # `identifier-mint-v2`
 
-Version 2 of LMEC's Identifier Mint tool for minting new spatial data records in our ARK namespace. Built in SvelteKit. Requires `node` >=18.13.
+Version 2 of LMEC's Identifier Mint tool for minting new spatial data records in our ARK namespace. Built with SvelteKit. Requires `node` >=18.13.
 
 ## Develop locally
 
