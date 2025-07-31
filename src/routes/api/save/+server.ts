@@ -12,7 +12,6 @@ export async function POST({ request }) {
   const { currentId, creator, url, password } = await request.json();
 
   console.log("Password received:", password);
-  console.log("Expected:", WRITE_PASSWORD);
 
   if (password !== WRITE_PASSWORD) {
     return new Response('Unauthorized', { status: 401 });
