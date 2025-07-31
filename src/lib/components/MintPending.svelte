@@ -53,7 +53,7 @@
     "rounded-md px-3 py-2 text-l font-medium bg-red-100 text-red-700 hover:bg-red-200  cursor-pointer transition duration-100";
   let save =
     "rounded-l px-3 py-2 text-l font-medium bg-green-100 text-green-700 hover:bg-green-200  cursor-pointer transition duration-100";
-  let notClickable = "bg-gray-200 text-gray-500 cursor-not-allowed";
+  let notClickable = "rounded-md bg-gray-100 text-gray-300 cursor-not-allowed";
 </script>
 
 <h1 class="font-black text-4xl">Mint new identifier</h1>
