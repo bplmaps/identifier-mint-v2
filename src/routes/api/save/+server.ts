@@ -11,19 +11,18 @@ const sb = createClient(
 export async function POST({ request }) {
   const { currentId, creator, url, password } = await request.json();
 
-  console.log("Password received:", password);
-
   if (password !== WRITE_PASSWORD) {
     return new Response('Unauthorized', { status: 401 });
   }
 
+  console.log("URL is:" + url)
   const { data, error } = await sb
     .from('atlascope')
     .insert({
       lmec_mint: currentId,
       who_mint: creator,
       url: url,
-      barcode: null
+      barcode: 999
     })
     .select();
 

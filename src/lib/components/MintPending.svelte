@@ -24,7 +24,7 @@
           ...state.metadata,
           stampedId: prefix + uid,
           stampedCreator: creator ? `${creator}` : "Anonymous",
-          stampedUrl: creator ? `${commonwealthUrl}` : "???",
+          stampedUrl: commonwealthUrl ? `${commonwealthUrl}` : "???",
         },
       };
     });
@@ -41,7 +41,7 @@
     addNewMint(
       $appState["metadata"]["stampedId"],
       $appState["metadata"]["stampedCreator"],
-      $appState["metadata"]["stampedurl"],
+      $appState["metadata"]["stampedUrl"],
       password
     );
     reset();
@@ -85,7 +85,7 @@
       <p class="text-base sm:text-md font-medium text-gray-900">Commonwealth URL</p>
       <input
         class="rounded"
-        placeholder="Norman B. Leventhal"
+        placeholder="https://..."
         bind:value={commonwealthUrl}
       />
     </div>

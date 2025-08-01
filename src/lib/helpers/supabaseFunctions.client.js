@@ -25,6 +25,8 @@ export const addNewMint = async (currentId, creator, url, password) => {
     })
   });
 
+  console.log(url)
+
   if (!res.ok) {
     const message = await res.text();
     console.error("Save failed:", message);
